@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>
+        <div class="container">
+
+            <div class="header">
+                <h2>Sign in</h2>
+                <span>Login to manage your account</span>
+            </div>
+    
+            <form id="form">
+                <!-- font awesome email -->
+                <input type="text" placeholder="Your email" class="input-style" id="email">
+                <small id="error-email" class="error"></small>
+                <!-- font awesome  password -->
+                <input type="password" placeholder="Your password" class="input-style" id="password">
+                <small id="error-password" class="error"></small>
+                <i class="fa-solid fa-envelope icons-input"></i>
+                <i class="fa-solid fa-key icons-input"></i>
+                <div class="box-remember">
+                    <input type="checkbox" name="" id="remember">                    
+                    <label for="remember">Remember me</label>
+                </div>
+                <input type="submit" value="Sign Up">
+            </form>
+
+        </div>
+    </section>
+
+    <footer>
+        <div class="create-account">
+            <p>Don't have an account? </p>
+            <a href="/cadastro/cadastro.html">Create account</a>
+        </div>
+        <a href="/">Forgot password?</a>
+    </footer>
+
+    <div class="soon-interface">
+        <div class="text-interface">
+            <h1>Soon an interface !</h1>
+            <i class="fa-solid fa-xmark" onclick="closeSoonInterface()"></i>
+        </div>
+    </div>
+    
+    <script src="app.js"></script>
+    <script src="https://kit.fontawesome.com/401e977aa0.js" crossorigin="anonymous"></script>
+
+</body>
+</html>
